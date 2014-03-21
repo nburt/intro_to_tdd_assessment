@@ -6,4 +6,9 @@ describe PrimeNumberDetector do
     prime = PrimeNumberDetector.new
     expect(prime.prime_number?(3)).to eq true
   end
+
+  it "returns false if number is not a prime number" do
+    prime = PrimeNumberDetector.new
+    expect(prime.prime_number?(4)).to eq false
+  end
 end
